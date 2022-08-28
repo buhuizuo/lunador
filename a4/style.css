@@ -1,0 +1,570 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.w {
+  width: 1220px;
+  margin: 0 auto;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+body {
+  background-color: rgb(13, 4, 48);
+  font-family: "PT Serif", serif, sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 50px;
+  color: #fff;
+  font-family: "Lobster", cursive, sans-serif;
+  font-weight: 400;
+}
+
+/* header */
+.header {
+  height: 90px;
+  background-color: rgb(45, 30, 104);
+  line-height: 85px;
+}
+.header img {
+  float: left;
+  padding: 5px 30px;
+  height: 80px;
+}
+.header h3 {
+  font-size: 42px;
+  color: #fff;
+  padding-left: 10px;
+}
+/* nav */
+.nav {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: rgb(45, 30, 104);
+  z-index: 1;
+}
+.nav ul li {
+  display: inline-block;
+}
+.nav ul li a {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  margin-left: 50px;
+  padding: 0 10px;
+  /* border: 1px solid #fff; */
+  color: #fff;
+}
+/* about us */
+.section1 {
+  position: relative;
+  width: auto;
+  height: 800px;
+  background-image: url(images/aboutUs.jpg);
+}
+.about_us {
+  position: absolute;
+  display: inline-block;
+  margin: 100px 0 0 70px;
+  width: 350px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.about_us p {
+  font-size: 20px;
+  color: #fff;
+}
+/* Seats and Prices */
+.section2 h1 {
+  margin: 50px 0 10px 0;
+}
+.box {
+  position: relative;
+  float: left;
+  width: 600px;
+  height: 800px;
+  margin: 10px;
+  margin-left: 0;
+  background-color: rgb(179, 179, 179);
+}
+.box img {
+  width: 100%;
+}
+.box table {
+  margin: 30px auto;
+  text-align: center;
+}
+.box tr th {
+  font-size: 24px;
+  padding: 0 15px;
+  font-weight: 400;
+}
+.box tr td {
+  font-size: 18px;
+  padding: 25px 30px 15px 25px;
+}
+.first_class_tag {
+  position: absolute;
+  top: 800px;
+  left: -10px;
+  width: 350px;
+  height: 100px;
+  margin: -771px 0 0 35px;
+  color: #fff;
+}
+.first_class_tag span {
+  display: block;
+  width: 50px;
+  height: 15px;
+  background-color: rgb(236, 230, 202);
+  border-radius: 2px;
+  color: rgb(36, 22, 2);
+  text-align: center;
+  line-height: 17px;
+  font-size: 12px;
+}
+.first_class_tag img {
+  width: 15px;
+  margin: 35px 10px 0 0;
+}
+.first_class_tag h3 {
+  font-size: 24px;
+  text-shadow: 4px 4px 2px #000000;
+}
+.first_class_tag p {
+  margin-top: 200px;
+}
+/* now showing */
+.show_list {
+  width: auto;
+  margin-left: 102px;
+}
+.show_list h1 {
+  margin: 50px 0 10px 0;
+}
+.show_list li {
+  /* width: 574px;
+  height: 1050px; */
+  /* background-color: rgb(255, 255, 255);
+  margin: 0 20px 20px 0;
+  color: aliceblue; */
+}
+.show_list .flip-card {
+  float: left;
+  margin: 0 20px 20px 0;
+  background-color: transparent;
+  width: 574px;
+  height: 1050px;
+  /* perspective: 1000px; */
+}
+.show_list .flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.show_list .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.show_list .flip-card-back,
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.show_list .flip-card-front {
+  width: 574px;
+  height: 1050px;
+  background-color: rgb(24, 3, 54);
+  color: rgb(234, 226, 245);
+}
+.show_list .flip-card-back {
+  width: 574px;
+  height: 1050px;
+  border-style: inset;
+  border-width: 7px;
+  border-color: coral;
+  background-color: aliceblue;
+  color: rgb(12, 3, 39);
+  transform: rotateY(180deg);
+}
+.flip-card-back p {
+  display: inline-block;
+  padding-top: 100px;
+  width: 350px;
+  font-size: 20px;
+}
+.show_list ul li img {
+  width: 100%;
+}
+.show_list h3 {
+  margin: 10px 0px -24px 8px;
+  font-size: 38px;
+  font-weight: 600;
+  text-shadow: 20px 2px 35px rgba(183, 137, 236, 0.8);
+}
+.show_list .details {
+  margin: 30px 0px;
+}
+.show_list .tag {
+  display: inline-block;
+  margin: 0px 5px;
+  width: 40px;
+  height: 14px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 16px;
+}
+.show_list .MA15 {
+  background-color: red;
+}
+.show_list .PG {
+  background-color: yellow;
+  color: black;
+}
+.show_list .M {
+  width: 30px;
+  background-color: skyblue;
+}
+.show_list .CTC {
+  background-color: orange;
+}
+.show_list .movie_length {
+  font-size: 16px;
+}
+.show_list .time_table {
+  margin: 8px;
+  font-size: 20px;
+}
+.show_list .time_table em {
+  float: left;
+  font-style: normal;
+}
+.show_list .time_table span {
+  float: right;
+}
+.show_list ul li button {
+  width: 150px;
+  height: 50px;
+  margin: 30px 180px;
+  border: 1px solid rgb(18, 2, 65);
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  color: rgb(18, 2, 65);
+  cursor: pointer;
+}
+.footerfooter {
+  margin: 50px 0;
+  /* height: 100px; */
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.footerfooter .company_logo {
+  margin: 20px 0 0 50px;
+  float: left;
+}
+.footerfooter .contact {
+  float: right;
+  margin: 20px 20px 0 0;
+}
+.footerfooter .more_info {
+  float: right;
+  width: 300px;
+  margin: 50px;
+}
+.footerfooter .more_info a {
+  color: #fff;
+}
+.footerfooter .more_info a:hover {
+  color: #ccc;
+}
+/* booking */
+.trailer {
+  margin: 20px 220px;
+}
+.movie_details {
+  color: #fff;
+}
+.movie_details .movie_img {
+  float: left;
+  margin: 30px 50px;
+}
+.movie_details .movie_info {
+  margin-top: 150px;
+}
+.movie_details .movie_info h3 {
+  display: inline-block;
+  font-size: 32px;
+}
+.movie_details .movie_info span {
+  display: block;
+  font-size: 14px;
+}
+.movie_details .movie_info em {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 18px;
+  font-style: normal;
+  width: 51px;
+  height: 30px;
+  background-color: skyblue;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+}
+.movie_details .movie_info .movie_table {
+  padding-top: 30px;
+  font-size: 16px;
+}
+.movie_details .movie_key,
+.movie_value {
+  font-weight: 600;
+  padding: 8px 40px 0px 0px;
+  color: #fff;
+}
+/* user_info */
+.user_info {
+  width: 1040px;
+  margin: 70px 150px;
+  font-size: 20px;
+  color: white;
+}
+.user_select {
+  margin-right: 25px;
+}
+.user_info h3 {
+  display: inline-block;
+  width: 150px;
+  margin: 0 20px 10px 0;
+}
+
+.set_margin {
+  margin: 60px 200px;
+}
+.user_name_error,
+.user_email_error,
+.user_phone_error {
+  padding-left: 10px;
+  size: 16px;
+  color: red;
+}
+.user_info input[type="text"] {
+  display: inline-block;
+  width: 30px;
+  padding: 7px 0px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  color: grey;
+}
+.user_seat li:nth-child(-n + 3) {
+  font-weight: 700;
+  color: goldenrod;
+}
+.user_seat,
+.number {
+  display: inline-block;
+  vertical-align: top;
+}
+.number {
+  margin-left: 200px;
+}
+.user_seat li {
+  margin-bottom: 16px;
+}
+.number .add,
+.reduce {
+  width: 30px;
+  height: 30px;
+  vertical-align: center;
+  padding: 7px 0px;
+  margin: 5px;
+  border-radius: 8px;
+  border-style: none;
+  color: #fff;
+  background-color: rgb(45, 30, 104);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.user_info .user_name input[type="text"],
+.user_email input[type="text"],
+.user_phone input[type="text"] {
+  width: 250px;
+}
+.user_info .book {
+  margin: -15px 390px;
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  font: normal 700 28px/50px "PT Serif", serif, sans-serif;
+  color: rgb(13, 4, 48);
+  transition: all 0.3s ease-out;
+}
+.user_info button:hover {
+  transform: translateY(-5px);
+  /* background-color: gray; */
+}
+.user_info .book:active {
+  transform: translateY(10px);
+  background-color: #fff;
+}
+.total {
+  float: right;
+  margin-right: 210px;
+}
+.storeUserData {
+  margin: 20px 0 0 150px;
+}
+.remember,
+.forget {
+  display: inline-block;
+  padding: 5px 17px;
+  margin-right: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: rgb(59, 57, 57);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.forget {
+  background-color: #ccc;
+  color: rgb(128, 128, 128);
+  font-weight: 400;
+}
+.remember:hover,
+.forget:hover {
+  transform: translateY(-7px);
+}
+.remember:active,
+.forget:active {
+  transform: translateY(10px);
+}
+.remember:visited {
+  transform: translateY(-2px);
+}
+/* footer */
+.footer_booking {
+  color: #fff;
+}
+#debug {
+  color: #333;
+  padding-left: 100px;
+}
+/* receipt */
+/* A4 page  */
+.container {
+  width: 230mm;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 12pt;
+  background: rgb(204, 204, 204);
+}
+
+.main-page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+.sub-page {
+  padding: 1cm;
+  height: 297mm;
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+  .main-page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
+/* receipt page */
+.container {
+  font-size: 20px;
+}
+.company,
+.movieDetailInReceipt {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.company li {
+  font-size: 24px;
+}
+.company h1 {
+  color: black;
+  font-size: 60px;
+}
+.movieDetailInReceipt h3 {
+  font-size: 40px;
+}
+.seatDetails table {
+  width: 100%;
+}
+.seatDetails th {
+  text-align: left;
+}
+.checkOut {
+  font-weight: 700;
+  text-align: right;
+}
+.userInformation p,
+.policy {
+  font-weight: 700;
+}
+.container footer {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 257px;
+}
+.movieDetailInTickets {
+  padding: 60px 0px 400px 40px;
+  font-size: 56px;
+}
+.movieDetailInTickets p {
+  font-size: 34px;
+}
+.reminder {
+  font-weight: 700;
+}
