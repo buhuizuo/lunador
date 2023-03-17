@@ -1,6 +1,5 @@
 # lunador
-country side cinema webpage
-click the link to the page.
+country side cinema webpage (waiting to deploy)
 
 
 
