@@ -1,6 +1,9 @@
 # lunador
-country side cinema webpage (waiting to deploy)
+country side cinema webpage, click the link 
+https://titan.csit.rmit.edu.au/~s3903904/wp/a4/index.php
 
+userName:s3903904
+pwd:ershugonG321
 
 
 This webpage shows the latest cinema news, current movie releases, and a detailed comparison of the benefits of different memberships.
